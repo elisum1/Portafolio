@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <div class="w-[100%] h-[150px] border-b-2 flex gap-2">
+            <div class="w-[30%] h-[100%] justify-start items-center flex m-auto">
+                <a href="formulario.html" class="font-primary font-bold text-4xl -tracking-widest text-bgColorMorado hover:cursor-pointer ">elias<span class="text-black">UM.</span></a>
+
+            </div>
+            
+            <div class="w-[30%] h-[100%] flex justify-end items-center m-auto gap-4">
+                <a href="formulario.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(79, 9, 234, 1);transform: msFilter"><circle cx="12" cy="20" r="2"></circle><circle cx="12" cy="4" r="2"></circle><circle cx="6.343" cy="17.657" r="2"></circle><circle cx="17.657" cy="6.343" r="2"></circle><circle cx="4" cy="12" r="2.001"></circle><circle cx="20" cy="12" r="2"></circle><circle cx="6.343" cy="6.344" r="2"></circle><circle cx="17.657" cy="17.658" r="2"></circle></svg>
+
+                </a>
+
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(79, 9, 234, 1);transform: msFilter"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="sm:w-[70%] m-auto w-[90%]">
+            <div class="p-7 w-[100%] h-[100%] m-auto">
+
+                <h1 class="font-primary-alt text-center p-5 font-extrabold md:text-2xl text-xl  text-bgColorMoradoClaro">Ahora solo llena el formulario y me pondre en contacto contigo ... </h1>
+            </div>
+        </div>
+        <div class="w-[80%] h-[70vh] m-auto s:flex s:flex-row justify-center items-center font-primary ">
+
+            <form class=" w-[70%] flex flex-col" action="/submit_formulario" method="post" action="https://formsubmit.co/elias.um94@email.com">
+                <div class="md:w-[100%] flex flex-col md:items-center">
+
+                    <label class="p-3" for="">Nombre</label> <input class="border-2 rounded-md p-2 s:w-[100%] md:w-[60%]"  type="text" name="nombre" placeholder="Nombre" required>
+                    <label class="p-3" for="">Email</label> <input  class="border-2 rounded-md p-2 s:w-[100%] md:w-[60%]" type="email" name="email" placeholder="Correo electrónico" required><br><br><br>
+                </div>
+
+              <label class="p-3" for="">Deja tu mensaje</label><textarea class=" w-[100%] border-2 rounded-md p-2 "  name="mensaje" placeholder="Mensaje" rows="4" required></textarea><br>
+              <div class="flex justify-center">
+                  <input class="mt-2 p-2 w-[40%] bg-bgColorVerde rounded-sm shadow-md hover:cursor-pointer hover:bg-bgColorMoradoClaro transition-all" type="submit" value="Enviar">
+
+              </div>
+            </form>
+        </div>
+        
+    </main>
+    
+</body>
+
+<footer id="footer" >
+    <div class="flex-col w-[100%] h-screen bg-white">
+
+        <div class="bg-gray-700 w-[80%] h-[25vh] m-auto relative top-[100px] rounded-md">
+            <div class=" sm:flex sm:flex-row sm:items-center w-[80%] h-[25vh] m-auto rounded-md sm:justify-between font-primary-alt text-white flex flex-col gap-4 "> 
+                <h2 class="font-bold text-xl sm:text-2xl">Comencemos un proyecto</h2>
+                <h3 class="text-xs lg:text-sm">Si te gustaria trabajar conmigo o realizar algun proyecto pincha el boton situado a la derecha </h3>
+                <button class="border-2 border-bgColorVerde border-solid font-semibold bg-blue-50 md:w-[200px] md:h-[60px] w-[40%] h-[25%] md:text-[.8rem] text-black rounded-md hover:bg-indigo-400 hover:text-bgColorBlanco transition-all text-[.7rem] font-secondary-alt"> <a href="formulario.html">Vamos que esperas</a></button>
+            </div>
+        </div>
+        <div class="bg-bgColorMoradoClaro w-[100%] h-[80vh] md:flex md:flex-row md:justify-center md:items-center md:gap-9 flex flex-col justify-center items-center m-auto">
+            
+            
+            <h2 class="text-[1rem] font-primary text-bgColorBlanco p-3">La clave del exito esta en la disciplana, la constancia y la perserverancia.</h2>
+            <a href="https://www.instagram.com/elias_urrieta/"><svg class="hover:bg-black hover:rounded-md transition-all" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>
+            </a>
+            <a href="https://x.com/EliasUm94"><svg class="hover:bg-black hover:rounded-full transition-all" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+            </a>
+            <a href="https://web.facebook.com/elias.urrieta1"><svg class="hover:bg-black hover:rounded-full transition-all" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgb(245, 245, 245);transform: msFilter"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg>    
+            </a>
+            <a href="formulario.html"><svg class="hover:bg-black hover:rounded-md transition-all" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z"></path></svg>
+            </a>
+            <a class="text-bgColorVerde font-semibold" href="https://github.com/elisum1/Portafolio">GitHub  <a class="font-semibold text-bgColorVerde " href="https://app.netlify.com/teams/elisum1/overview">Netifly</a></a>
+        </div>
+
+ </footer>
+<script src="src/js/jstail.js"></script>
+</html>
