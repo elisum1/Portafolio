@@ -9,48 +9,77 @@
     <link rel="stylesheet" href="src/output.css">
     <title>Portafolio_enyoi</title>
 </head>
-<body class=" h-screen w-full">
-    <header id="header" class="flex flex-row">
-        <div class="bg-bgColorMorado w-[125vh] max-h-[100vh] flex flex-col m-0 p-9 gap-y-20 justify-center">
-            
-            <div class=" max-w-[100%] h-[100%] relative top-20 gap-10 flex flex-col p-10">
-                <h1 class="font-primary font-bold text-4xl -tracking-widest text-bgColorVerde hover:cursor-pointer ">elias<span class="text-gray-700">UM.</span></h1>
+<body class=" max-h-screen w-full flex flex-col">
+    <header id="header" class=" flex lg:flex-row flex-col">
+        <div id="headerMorado" class="bg-bgColorMorado lg:w-[125vh] lg:h-[100vh] flex flex-col m-0 p-9 gap-[200px] justify-center">
+
+            <svg class=" absolute top-[300px]"  width="280" height="200" viewBox="0 0 190 200">
+                <line  x1="10" y1="200" x2="220" y2="0" style="stroke:grey; stroke-width:2"></line>
+                <line x1="100" y1="40" x2="220" y2="180" stroke="black" stroke-width="2"></line>
+            </svg>
+
+            <div class=" max-w-[100%] h-[400px] relative top-20 gap-[50px] flex flex-col p-4">
+                <a href="index.html" class="font-primary font-bold text-4xl -tracking-widest text-bgColorVerde hover:cursor-pointer ">elias<span class="text-white">UM.</span></a>
                 
-                <h2 class=" textos font-primary text-5xl text-bgColorVerde font-bold "></h2>
-                <h2 class="mt-6 font-primary text-4xl text-white font-bold subtext"></h2>
+                <h2 class="textos font-primary text-5xl text-bgColorVerde font-bold h-6 m-auto"></h2>
+                <div class="m-auto">
+
+                    <h2 class="mt-6 font-primary text-4xl text-white font-bold subtext h-3"></h2>
+                </div>
             </div>
-            <div class="relative m-0  flex gap-x-6 max-w-[100%] max-h-[100%] font-secondary text-gray-50 p-9 ">
-                <p>K isj dijeidie iejdie iediajei iie ois ep soien eoisd eosd o uje Me gusta innovar en el mundo de la tecnologia y realizar proyectos solidos en el area tecnologico.</p>
-                <p>K isj dijeidie iejdie iediajei iie ois ep soien eoisd eosd o uje Me gusta innovar en el mundo de la tecnologia y realizar proyectos solidos en el area tecnologico.</p>
+            <div class="flex gap-x-6 w-[100%] h-[80%] font-secondary text-gray-50 m-auto p-4 ">
+                <p> Me gusta innovar en el mundo de la tecnologia y realizar proyectos solidos en el area tecnologico.</p>
+                <p> Me gusta innovar en el mundo de la tecnologia y realizar proyectos solidos en el area tecnologico.</p>
             </div>
 
         </div>
 
-        <div class="bg-bgColorVerde w-[40%] max-h-[100vh] p-9">
+        <div class="bg-bgColorVerde lg:w-[40%] lg:max-h-[100vh] p-9">
 
             <div class="flex flex-col max-w-[100%] max-h-[100%]">
 
-                <div class="textoRepetivo font-primary text-2xl font-bold text-gray-700 max-w-[100%] p-3"></div>
-              <div class="max-h-[50px] flex flex-row justify-end p-2">
+                <div class="textoRepetivo font-primary text-3xl font-bold text-gray-700 max-w-[100%] p-3 text-center"></div>
+              <div class="max-w-[700px] max-h-[50px] flex flex-row justify-end p-2">
 
-                  <svg id="svgs"  class="hover:origin-center hover:rotate-45  hover:cursor-pointer hover:w-[42px] hover:h-[42px]  hover:duration-700 " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
-                      <path d="M 5 5 L 5 7 L 6 7 L 44 7 L 45 7 L 45 5 L 44 5 L 6 5 L 5 5 z M 5 10 L 5 12 L 6 12 L 44 12 L 45 12 L 45 10 L 44 10 L 6 10 L 5 10 z M 5 16 L 5 18 L 6 18 L 44 18 L 45 18 L 45 16 L 44 16 L 6 16 L 5 16 z M 5 21 L 5 23 L 6 23 L 44  L 44 21 L 6 21 L 5 21 z M 5 27 L 5 29 L 6 29 L 44 29 L 45 29 L 45 27 L 44 27 L 6 27 L 5 27 z M 5 32 L 5 34 L 6 34 L  L 5 32 z M 5 38 L 5 40 L 6 40 L 44 40 L 45 40 L 45 38 L 44 38 L 6 38 L 5 38 z M 5  z"></path>
-                    </svg>
-                    
+                <svg id="swichW"  class="bx bxs-like" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="animation: tada 1s infinite;">
+                    <path d="M16 6H8c-3.296 0-5.982 2.682-6 5.986v.042A6.01 6.01 0 0 0 8 18h8a6.01 6.01 0 0 0 6-5.994v-.018C21.985 8.685 19.297 6 16 6zm-8 9c-1.627 0-3-1.373-3-3s1.373-3 3-3 3 1.373 3 3-1.373 3-3 3z" fill="#ffffff"/>
+                  </svg>
+
+                  <svg id="swichB" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" class="bx bxs-like hidden" style="animation: tada 1s infinite;">
+                    <path d="M8 6h8c3.296 0 5.982 2.682 6 5.986v.042A6.01 6.01 0 0 1 16 18H8a6.01 6.01 0 0 1-6-5.994v-.018C2.015 8.685 4.703 6 8 6zm8 9c1.627 0 3-1.373 3-3s-1.373-3-3-3-3 1.373-3 3 1.373 3 3 3z" fill="#000000"/>
+                  </svg>
+
+                  <style>
+                    @keyframes tada {
+                      0% { transform: scale(1); }
+                      10%, 20% { transform: scale(0.9) rotate(-3deg); }
+                      30%, 50%, 70%, 90% { transform: scale(1.1) rotate(3deg); }
+                      40%, 60%, 80% { transform: scale(1.1) rotate(-3deg); }
+                      100% { transform: scale(1) rotate(0); }
+                    }
+                  </style>
+                  
+                  
+                  
+             
                 </div>
-                <div class="relative top-14">
 
-                    <button id="indagar" class="hover:bg-bgColorMorado hover:duration-700 bg-gray-700 w-40 h-10 borde rounded-xl text-white relative" >Indagar</button>
-                    
+                <div class="relative top-14">
+                    <p id="palabra" class="text-center p- font-primary text-xl w-[100%] h-[5px] font-bold text-gray-800 relative lg:bottom-7 "></p>
                     <div class="max-w-[100%] max-h-[100vh] flex flex-col items-center">
-                        <p id="palabra" class="p-7 font-primary text-xl w-[100%] h-[5px] font-bold text-gray-800 relative top-10"></p>
-                         <svg id="webClass" class="hover:cursor-pointer max-w-[50vh] max-h-[70vh]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="610.81985" height="489.57062" viewBox="0 0 610.81985 489.57062"><path d="m15.17983,488.38062c0,.66.53,1.19,1.19,1.19h593.26001c.65997,0,1.19-.53,1.19-1.19s-.53003-1.19-1.19-1.19H16.36983c-.66,0-1.19.53-1.19,1.19Z" fill="#2f2e43" stroke-width="0"/><path d="m322.81828,370.94498c-1.62896,9.87394-10.22129,17.43042-20.54927,17.43042s-18.9203-7.55648-20.54927-17.43042h-52.57347v113.93544h146.24548v-113.93544h-52.57347Z" fill="#b6b3c5" stroke-width="0"/><rect x="231.69705" y="484.45538" width="14.4545" height="2.55079" fill="#b6b3c5" stroke-width="0"/><rect x="359.66185" y="484.88051" width="14.4545" height="2.55079" fill="#b6b3c5" stroke-width="0"/><rect x="229.57119" y="475.854" width="146.24591" height="3.96619" fill="#2f2e41" stroke-width="0"/><path d="m596.38474,373.92091H8.15307c-4.49565,0-8.15307-3.65763-8.15307-8.15307V30.0645c0-4.49544,3.65742-8.15307,8.15307-8.15307h588.23167c4.49565,0,8.15328,3.65763,8.15328,8.15307v335.70334c0,4.49544-3.65763,8.15307-8.15328,8.15307Z" fill="#2f2e41" stroke-width="0"/><rect x="14.87962" y="36.36602" width="575.62903" height="324.80102" fill="#fff" stroke-width="0"/><path d="m522.12121,161.10268h-31.40942c-2.72925,0-4.94971-2.22021-4.94971-4.94971s2.22046-4.94971,4.94971-4.94971h31.40942c2.72925,0,4.94971,2.22021,4.94971,4.94971s-2.22046,4.94971-4.94971,4.94971Z" fill="#d1d1d2" stroke-width="0"/><path d="m558.2423,161.10268h-14.65771c-2.72925,0-4.94971-2.22021-4.94971-4.94971s2.22046-4.94971,4.94971-4.94971h14.65771c2.72925,0,4.94971,2.22021,4.94971,4.94971s-2.22046,4.94971-4.94971,4.94971Z" fill="#d1d1d2" stroke-width="0"/><path d="m207.6466,164.88296h-95.60376c-4.88037,0-8.85083-3.9707-8.85083-8.85107s3.97046-8.85107,8.85083-8.85107h95.60376c4.88062,0,8.85107,3.9707,8.85107,8.85107s-3.97046,8.85107-8.85107,8.85107Z" fill="#6c63ff" stroke-width="0"/><path d="m155.81335,188.49575h-46.07422c-2.97485,0-5.39526-2.42041-5.39526-5.39502,0-2.9751,2.42041-5.39551,5.39526-5.39551h46.07422c2.97485,0,5.39526,2.42041,5.39526,5.39551,0,2.97461-2.42041,5.39502-5.39526,5.39502Z" fill="#d1d1d2" stroke-width="0"/><path d="m409.79675,209.80532H108.58727c-2.97485,0-5.39526-2.42041-5.39526-5.39551s2.42041-5.39551,5.39526-5.39551h301.20947c2.97485,0,5.39526,2.42041,5.39526,5.39551s-2.42041,5.39551-5.39526,5.39551Z" fill="#d1d1d2" stroke-width="0"/><path d="m383.88,224.20327H108.58727c-2.97485,0-5.39526-2.42041-5.39526-5.39551,0-2.97461,2.42041-5.39502,5.39526-5.39502h275.29272c2.97485,0,5.39526,2.42041,5.39526,5.39502,0,2.9751-2.42041,5.39551-5.39526,5.39551Z" fill="#d1d1d2" stroke-width="0"/><polygon points="557.3418 432.03741 543.52488 446.54549 528.79946 432.9325 542.61638 418.42443 557.3418 432.03741" fill="#ed9da0" stroke-width="0"/><path d="m568.37828,446.89654l-29.36998,30.83913c-2.51029,2.63586-5.64561,4.71841-9.06708,6.0225l-8.18831,3.12104c-1.69302.64532-3.64239.27152-4.96618-.95226-1.55248-1.4352-1.9454-3.73444-.9555-5.59137l7.87618-14.77439,8.40469-29.96186.09142.0563c2.28636,1.40797,5.75424,3.52058,6.00144,3.61003,4.35229.15413,7.46798-.94048,9.26147-3.25263,3.12825-4.03295,1.1436-10.47122,1.12319-10.53582l-.0156-.04942.03968-.03397c.91186-.77861,1.87235-1.09015,2.85488-.92602,2.08576.34851,3.57774,2.69144,3.79609,3.05188,1.95729-.08245,7.96683,4.62411,8.45043,5.00551,2.95043-.00791,5.11335.69168,6.42839,2.07965,1.14975,1.21342,1.65035,2.93583,1.48814,5.11937-.1951,2.62712-1.35051,5.1743-3.25335,7.17233Z" fill="#090814" stroke-width="0"/><rect x="521.19772" y="448.74102" width="20.19271" height="19.89466" fill="#ed9da0" stroke-width="0"/><path d="m537.9439,486.73258h-42.92269c-3.66865,0-7.35544-.82768-10.66185-2.3936l-7.91297-3.74756c-1.6361-.77484-2.69329-2.4312-2.69329-4.21969,0-2.09747,1.43298-3.95303,3.48476-4.51242l16.32485-4.45054,27.92779-14.46289.02089.1042c.52231,2.60611,1.33153,6.54329,1.43447,6.7821,2.86399,3.2325,5.8061,4.72207,8.74468,4.42857,5.12558-.51197,8.533-6.34331,8.56684-6.40218l.02591-.04502.05229.00526c1.20024.12238,2.08806.59931,2.63887,1.41755,1.16923,1.73705.45596,4.41216.33857,4.81568,1.40031,1.34986,2.0287,8.88807,2.0773,9.49651,2.0247,2.11441,2.98687,4.14713,2.85936,6.04168-.11142,1.65636-1.04376,3.19459-2.77094,4.57215-2.07801,1.65744-4.75395,2.57022-7.53486,2.57022Z" fill="#090814" stroke-width="0"/><polygon points="543.78764 198.18147 472.23504 198.21632 448.38417 347.00736 519.93677 432.05072 543.78764 410.78988 487.24072 347.00736 543.78764 198.18147" fill="#090814" stroke-width="0"/><polygon points="501.49583 220.11469 543.78764 198.18147 543.78764 453.31156 519.93677 453.96652 501.49583 220.11469" fill="#090814" stroke-width="0"/><path d="m459.13337,257.84794l.50385-23.22496-13.56028-.29418-.50385,23.22496c-2.53,2.34865-4.20012,5.99798-4.28988,10.13548-.15706,7.23954,4.57252,13.21364,10.56385,13.34362,5.99133.12998,10.97555-5.63338,11.1326-12.87293.08976-4.1375-1.42063-7.85583-3.84629-10.31199Z" fill="#ed9da0" stroke-width="0"/><path d="m523.43608,31.03003s19.46513-.04207,12.19353-18.79784c-7.2716-18.75577-20.81174-10.35779-20.81174-10.35779,0,0-5.70536,3.01366-4.5291,9.73748" fill="#090814" stroke-width="0"/><path d="m525.3842,40.02662c0-14.38025-11.65746-26.03763-26.03754-26.03763s-26.03772,11.65737-26.03772,26.03763c0,11.6623,7.66783,21.53259,18.23664,24.84743l5.03369,33.26563,25.66039-21.3836s-5.54354-7.06083-8.51633-15.02245c7.02635-4.66298,11.66087-12.64233,11.66087-21.70702Z" fill="#ed9da0" stroke-width="0"/><path d="m511.85627,62.02208s3.45773-13.25664-2.19606-19.35213c-5.6409-6.0816-6.36957,3.38112-6.36957,3.38112l-4.07028-.88484s.70788-9.20238-7.25572-10.7951l5.1321-10.97207s-19.64839,3.81501-20.18995,1.912c-4.26122-14.97371,36.39041-27.76478,47.62013-4.92047,17.46591,35.53044-12.67063,41.6315-12.67063,41.6315Z" fill="#090814" stroke-width="0"/><path d="m488.85799,85.21825h-.00003c-18.90326,3.69375-33.0921,19.43311-34.81262,38.61688l-11.76634,131.19472h20.64802l25.93097-169.81159Z" fill="#6c63ff" stroke-width="0"/><polyline points="469.33436 189.7459 466.11864 226.78903 553.4084 201.11558 542.77225 174.34183 562.57749 128.86313 522.14834 70.91446 489.87313 73.11504 477.40316 89.25265" fill="#6c63ff" stroke-width="0"/><path d="m540.5188,224.92529l12.17487-19.78447-11.55149-7.1085-12.17487,19.78447c-3.37019.74757-6.65594,3.05208-8.82488,6.57666-3.79508,6.16709-2.73415,13.7125,2.36964,16.85325,5.10379,3.14075,12.31767.68745,16.11275-5.47964,2.16894-3.52458,2.74533-7.49636,1.89399-10.84176Z" fill="#ed9da0" stroke-width="0"/><path d="m515.54659,71.64799l7.03843-.29198,12.03331,9.09431c14.25886,2.43159,18.39403,3.11332,22.76287,12.53204,1.83579,3.95777,3.05281,8.17407,3.73324,12.48349l10.18023,64.47481-25.58831,61.6163-16.95628-19.07171,18.12649-48.17314-3.01123-11.52302" fill="#6c63ff" stroke-width="0"/></svg>
                         
+
+                        <div class="w-[100%] rounded-full h-[70vh] absolute lg:bg-bgColorBlanco flex justify-center items-center">
+                            <img id="webClass" class=" hidden hover:cursor-pointer max-w-[70%] max-h-[80%]" src="src/img/myAvatar(1).svg" alt="imagen perfil">
+                            <img id = 'webClassNormal'  class=" hover:cursor-pointer max-w-[70%] max-h-[80%]" src= "src/img/myAvatar(3).svg" alt="imagen perfil 2">
+                        </div>
                         <div class="flex flex-row justify-center bottom-11 gap-4 fixed">
 
-                            <button onclick="scrollToElement('header')"  id="cambio"  class=" w-4 h-4 rounded-bl-2xl bg-bgColorMorado cambio"></button>
-                            <button onclick="scrollToElement('main')"  id="cambio1"  class=" w-4 h-4 bg-bgColorMorado cambio"></button>
-                            <button id="cambio2"  class=" w-4 h-4 bg-bgColorMorado rounded-br-2xl cambio"></button>
+                            <button onclick="scrollToElement('header')"  id="cambio"  class="border-purple-950 border-b-4  w-8 h-6 rounded-sm bg-bgColorMorado hover:bg-bgColorMoradoClaro hover:border-purple-900"></button>
+                            <button onclick="scrollToElement('main')"  id="cambio1"  class=" border-purple-950 border-b-4 w-8 h-6 rounded-sm bg-bgColorMorado hover:bg-bgColorMoradoClaro hover:border-purple-900"></button>
+                            <button onclick="scrollToSection('section1')" id="cambio2"  class=" border-purple-950 border-b-4 w-8 h-6 bg-bgColorMorado rounded-sm hover:bg-bgColorMoradoClaro hover:border-purple-900"></button>
+                            <button onclick="scrollToSection('section2')" id="cambio2"  class=" border-purple-950 border-b-4 w-8 h-6 bg-bgColorMorado rounded-sm hover:bg-bgColorMoradoClaro hover:border-purple-900"></button>
+                            <button onclick="scrollToSection('footer')" id="cambio2"  class=" border-purple-950 border-b-4 w-8 h-6 bg-bgColorMorado rounded-sm hover:bg-bgColorMoradoClaro hover:border-purple-900"></button>
                            
                         </div>
                     </div>
@@ -60,13 +89,136 @@
 
     </header>
 
-    <main id="main">
-        <div class="w-[800px] h-[800px]"></div>
-    </main>
-    
+    <main id='main'>
+        <div class="w-[100%] h-[100vh] ">
+            <div class="lg:hidden h-[90vh] font-primary font-bold text-bgColorMorado text-2xl flex flex-col justify-end gap-3 pt-4 pl-7 pr-5 ">
+                <h2 class="text-xl md:text-2xl">Hola, soy Elias.  Es un placer para mi conocerte.</h2>
+                <span class=" text-gray-700 text-sm font-normal">Desde que comence mi viaje como diseñador independiente hace 6 meses, he realizado proyectos individuales y bocetos para la mejora continua de la experiencia en el ambito de la programacion. Actualmente me encuentro en desarrollo de habilidades mediante un bootcamp llamado ENYOI, con unos 3 meses de participacion. Estoy tranquilamente confiado, naturalmente curioso y trabajando perpetuamente en mejorar mis habilidades.</span>
+            </div>
+            <div class="s:hidden lg:w-[70%] lg:h-[90%] lg:m-auto lg:text-center lg:flex lg:flex-col lg:justify-center gap-10 "> 
+                
+                <h2 class="font-primary font-bold text-bgColorMorado text-3xl ">Hola, soy Elias.  Es un placer para mi conocerte.</h2>
+                <span class="text-gray-700 text-xl">Desde que comence mi viaje como diseñador independiente hace 6 meses, he realizado proyectos individuales y bocetos para la mejora continua de la experiencia en el ambito de la programacion. Actualmente me encuentro en desarrollo de habilidades mediante un bootcamp llamado ENYOI, con unos 3 meses de participacion. Estoy tranquilamente confiado, naturalmente curioso y trabajando perpetuamente en mejorar mis habilidades.</span>
+            </div>
+        </div>
 
-    
-      
+        <section id="section1">
+            <div class="w-[100%] h-[100vh]">
+                <div id="bgSection1" class=" w-[100%] h-[100%] text-center bg-bgColorMorado p-2 "> 
+                    <div class="w-[90%] h-[90%] m-auto  flex flex-col font-primary gap-2 md:gap-7">
+                        <div class="p-2">
+                             <h2 class="font-semibold text-white">Elevando el conocimiento para una mejor estructura en HTML, organizando las ideas en JAVASCRIPT y dandole toque y belleza con TAILWIND y CSS </h2>
+                        </div>
+
+                        <div class="md:flex md:flex-row md:gap-4 w-full h-full flex flex-col">
+
+                            <div class="rounded-md bg-bgColorBlanco w-[90%] h-[30%] m-auto flex justify-around p-4 md:w-[80%] md:h-[250px]">
+                                
+                                <div class="w-[30%]">
+                                    
+                                    <img class="h-[80%] w-[80px]" src="src/img/bxl-html5.svg" alt="">
+                                
+                            </div>
+
+                            <div class="w-[70%] text-[.7rem] flex flex-col justify-center">
+                                <h2 class="font-bold text-purple-500 p-1">HTML5</h2>
+                                <p class="text-[.7rem]">Experiencia en estructura de HTML con buenas practicas de arquitectura para elaborar diseños web y aplicaciones. </p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="rounded-md bg-bgColorBlanco w-[90%] h-[30%] m-auto flex items-center p-4 md:w-[80%] md:h-[250px]">
+                           <div class="flex flex-col w-[30%]">
+                               <img class=" w-[60px] h-[50%]" src="src/img/bxl-tailwind-css.svg" alt="icono tailwind">
+                               <img class=" w-[60px] h-[50%]" src="src/img/bxl-css3.svg" alt="icono css">
+                            </div>
+                            <div class="w-[70%] text-[.7rem]">
+                                <h2 class="font-bold text-purple-500 p-1">TAILWIND Y CSS</h2>
+                                <p class="text-[.7rem]"> Conocimiento profundo de las últimas técnicas y estándares de diseño web, capacidad demostrada para crear interfaces atractivas y responsivas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="rounded-md bg-bgColorBlanco w-[90%] h-[30%] m-auto flex md:w-[80%] md:h-[250px]">
+                            
+                            <div class="w-[30%]">
+                                
+                                <img class="h-[80%] w-[80px]" src="src/img/bxl-javascript.svg" alt="icono javascript">
+                                
+                            </div>
+                            
+                            <div class="w-[70%] text-[.7rem] flex flex-col justify-center p-4 md:w-[80%] md:h-[90%]">
+                                <h2 class="font-bold text-purple-500 p-1">JAVASCRIPT</h2>
+                                <p class="text-[.7rem]">Experiencia en estructura de HTML con buenas practicas de arquitectura y para elaborar diseños web y aplicaciones. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="flex justify-center">
+                            <img class="w-[60%]" src="src/img/undraw_code_thinking_re_gka2.svg" alt="imagen hombre pensando">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="w-[100%] h-[125vh] m-0 sm:gap-3">
+                <div class="h-[10%] flex-col items-center justify-center w-[100%] m-auto gap-[10px]">
+
+                    <h2 class="  text-center sm:p-7 sm:font-secondary-alt font-bold sm:text-3xl text-bgColorMorado">Mis Proyectos Recientes ..</h2>
+                    <p class="text-sm text-center font-primary-alt sm:text-[1rem]  ">Si quieres conocer mas sobre mis proyectos, animate y escrimebe al  <a class="hover:text-[16.3px] font-primary font-semibold text-bgColorMoradoClaro" href="formulario.html">Email@.com</a>
+                </div>
+                   
+                <div class=" sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:items-end  w-[90%] h-[90%] m-auto lg:flex lg:flex-row lg:justify-center lg:items-center flex flex-col gap-7 items-center">
+                    <div class=' md:w-[90%] md:h-[300px] md:gap-3 lg:w-[400px] lg:h-[400px] bg-slate-500 rounded-md hover:bg-slate-300 md:transition-all hover:cursor-pointer lg:hover:w-[410px] lg:hover:h-[410px] w-[80%] h-[30%]'>
+                        <a href="https://blogdecafeelias.netlify.app/">
+                            <img  class="h-[50%]  w-[100%] sm:h-[80%] m-auto rounded-t-md  lg:hover:w-[410px] lg:hover:has-[110vh] hover:cursor-pointer" src="src/img/BlogDeCaffe.png" alt="">
+                            <p class="font-primary font-semibold text-white text-center p-4">Un blog de Caffe con un diseño elegante para los amantes de la buena vida</p>
+                        </a>
+                    </div>
+                    <div class=" md:w-[90%]  md:h-[300px] md:gap-3 lg:w-[400px] lg:h-[400px] bg-slate-500 rounded-md hover:bg-slate-300 md:transition-all hover:cursor-pointer lg:hover:w-[410px] lg:hover:h-[410px] w-[80%] h-[30%]" >
+                        <a href="https://proyectofreelancerelias.netlify.app/">
+                            
+                            <img class="h-[50%]  w-[100%] sm:h-[80%] m-auto rounded-t-md  lg:hover:w-[410px] lg:hover:has-[110vh]" src="src/img/DiseñoYDesarrollo.png" alt="">
+                            <p class="font-primary font-semibold text-white text-center p-4"> Simulamos un diseño web para ofrecer servicios front-end</p>
+                        </a>
+                    </div>
+                    <div class=" md:w-[90%]  md:h-[300px] md:gap-3 lg:w-[400px] lg:h-[400px] bg-slate-500 rounded-md hover:bg-slate-300 md:transition-all hover:cursor-pointer lg:hover:w-[410px] lg:hover:h-[410px] w-[80%] h-[30%]">
+                        <a href="https://stockse.netlify.app/">
+
+                            <img class="h-[50%]  w-[100%] sm:h-[80%] m-auto rounded-t-md  lg:hover:w-[410px] lg:hover:has-[110vh]"  src="src/img/Store.png" alt="">
+                            <p  class="font-primary font-semibold text-white text-center p-4">Una web pensada para los emprendedores que tengan tiendas virtuales</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>   
 </body>
+
+
+<footer id="footer" >
+    <div class="flex-col w-[100%] h-screen bg-white">
+
+        <div class="bg-gray-700 w-[80%] h-[25vh] m-auto relative top-[100px] rounded-md">
+            <div class=" sm:flex sm:flex-row sm:items-center w-[80%] h-[25vh] m-auto rounded-md sm:justify-between font-primary-alt text-white flex flex-col gap-4 "> 
+                <h2 class="font-bold text-xl sm:text-2xl">Comencemos un proyecto</h2>
+                <h3 class="text-xs lg:text-sm">Si te gustaria trabajar conmigo o realizar algun proyecto pincha el boton situado a la derecha </h3>
+                <button class="bg-blue-50 md:w-[200px] md:h-[50px] w-[40%] h-[50%] text-black rounded-md hover:bg-indigo-200 transition-all text-sm font-secondary-alt"> <a href="formulario.html">Vamos que esperas</a></button>
+            </div>
+        </div>
+        <div class="bg-bgColorMoradoClaro w-[100%] h-[80vh] md:flex md:flex-row md:justify-center md:items-center md:gap-9 flex flex-col justify-center items-center m-auto">
+            
+            <h2 class="text-[1rem] font-primary text-bgColorBlanco">La clave del exito esta en la disciplana, la constancia y la perserverancia.</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgb(245, 245, 245);transform: msFilter"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg>    
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z"></path></svg>
+            <a class="text-bgColorVerde font-semibold" href="https://github.com/elisum1/Portafolio">GitHub  <a class="font-semibold text-bgColorVerde " href="https://app.netlify.com/teams/elisum1/overview">Netifly</a></a>
+        </div>
+
+ </footer>
 <script src="src/js/jstail.js"></script>
 </html>
