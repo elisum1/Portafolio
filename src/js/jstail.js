@@ -1,14 +1,13 @@
 // QUERYS //
 
+//QUERYS DE EFECTOS DE ESCTITURA//
 const div = document.querySelector('.textos');
 const repetivoText = document.querySelector('.textoRepetivo');
 
 const subtext = document.querySelector('.subtext');
-const botonIndg = document.getElementById('indagar');
-const sig = document.getElementById('indagar');
-const web = document.getElementById('webClass');
 const palabr = document.getElementById('palabra');
 
+//Querys Botones//
 const colorFijo = document.getElementById('cambio');
 const colorFijo1 = document.getElementById('cambio1');
 const colorFijo2 = document.getElementById('cambio2');
@@ -16,8 +15,14 @@ const colorFijo3 = document.getElementById('cambio3');
 const colorFijo4 = document.getElementById('cambio4');
 const colorFijo5 = document.getElementById('cambio5');
 
+
 const panel = document.getElementById('svgs');
+
+//Querys de el Avatar//
+const web = document.getElementById('webClass');
 const webClassN = document.getElementById('webClassNormal')
+
+
 const mn = document.getElementById('main');
 const headerColor= document.getElementById('headerGris');
 const bgSection1 = document.getElementById('bgSection1');
@@ -30,7 +35,7 @@ const textoPortatil = document.getElementById('textPortatil')
 const efectoPt = document.getElementById('efectoPortatil')
 
 
-//EFECTOS ESCRITURA//
+//EFECTOS ESCRITURA AUTOMATICA AL INICIAR LA PAGINA//
 
 function efectoText(elemento,texto,i=0){
 elemento.textContent += texto[i];
@@ -55,7 +60,6 @@ setTimeout(() => efectoTextSecundario(subtext,text,j+1), 100);
 
 };
 
-
 text = 'Desarrolador Front-end y back-end en Formacion.';
 efectoTextSecundario(subtext,text);
 
@@ -74,8 +78,6 @@ setTimeout(() => efectoTextRepetivo(repetivoText,rText,h+1), 100);
 
 rText = 'BIENVENIDO';
 efectoTextRepetivo(repetivoText,rText);
-
-
 
 
 const webC = () => {
@@ -128,7 +130,7 @@ efectoTextPortatil(efectoPt,rTextP);
 
 textoPortatil.onclick = textoPort;
 
-//Buttons//
+//interaccion de el swich que tiene posicion fixed//
 
 const btnOn = () =>{
 
@@ -171,6 +173,8 @@ const btnOff = () =>{
 swichOff.onclick = btnOff
 
 
+//efecto scroll de la suavidad en que se redirigen las secciones mediante la interaccion de los botones//
+
 function scrollToElement(elementId) {
   const elemento = document.getElementById(elementId);
   if (elemento) {
@@ -185,18 +189,17 @@ function scrollToSection(sectionId) {
   }
 }
 
-function scrollToSection(sectionId) {
-  var section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  }
-}
+//efectos de cambio de color cuando damos click a los botones de interaccion que tienen posicion fixed//
 
 colorFijo.addEventListener('click', function() {
+
   if(!colorFijo.classList.contains('bg-bgColorNegro')){
 colorFijo.classList.add('bg-bgColorNegro');
 colorFijo1.classList.remove('bg-bgColorNegro')
 colorFijo2.classList.remove('bg-bgColorNegro')
+colorFijo3.classList.remove('bg-bgColorNegro')
+colorFijo4.classList.remove('bg-bgColorNegro')
+colorFijo5.classList.remove('bg-bgColorNegro')
 
 }else{
   colorFijo.classList.remove('bg-bgColorNegro');
