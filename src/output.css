@@ -610,6 +610,14 @@ video {
   margin: auto;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -698,16 +706,16 @@ video {
   height: 80%;
 }
 
+.h-\[800px\] {
+  height: 800px;
+}
+
 .h-\[80vh\] {
   height: 80vh;
 }
 
 .h-\[90\%\] {
   height: 90%;
-}
-
-.h-\[900px\] {
-  height: 900px;
 }
 
 .h-\[90vh\] {
@@ -720,14 +728,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[100px\] {
-  height: 100px;
-}
-
-.h-\[800px\] {
-  height: 800px;
 }
 
 .max-h-\[100\%\] {
@@ -794,6 +794,10 @@ video {
   width: 100%;
 }
 
+.w-\[00\%\] {
+  width: 00%;
+}
+
 .max-w-\[100\%\] {
   max-width: 100%;
 }
@@ -854,6 +858,10 @@ video {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-7 {
   gap: 1.75rem;
 }
@@ -870,16 +878,8 @@ video {
   gap: 50px;
 }
 
-.gap-\[80px\] {
-  gap: 80px;
-}
-
-.gap-\[90px\] {
-  gap: 90px;
-}
-
-.gap-\[95px\] {
-  gap: 95px;
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .rounded-full {
@@ -1027,6 +1027,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .font-primary {
@@ -1277,10 +1281,6 @@ video {
     flex-direction: row;
   }
 
-  .s\:gap-\[100px\] {
-    gap: 100px;
-  }
-
   .s\:gap-\[120px\] {
     gap: 120px;
   }
@@ -1289,12 +1289,20 @@ video {
     font-size: .2rem;
   }
 
+  .s\:text-\[0\.9rem\] {
+    font-size: 0.9rem;
+  }
+
   .s\:text-\[0\.8rem\] {
     font-size: 0.8rem;
   }
 
-  .s\:text-\[0\.9rem\] {
-    font-size: 0.9rem;
+  .s\:text-\[0\.7rem\] {
+    font-size: 0.7rem;
+  }
+
+  .s\:text-\[0\.75rem\] {
+    font-size: 0.75rem;
   }
 }
 
