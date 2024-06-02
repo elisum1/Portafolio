@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html","./formulario.html","./src/**/*.{html,js}"],
+  content: ["./index.html","./formulario.html","./src/**/*.{html,js}"],
   theme: {    
     extend: {
       screens: {
+        's' : '100px',
+
         's' : '100px',
 
         'sm': '640px',
@@ -24,6 +27,7 @@ module.exports = {
            
            colors : {
 
+        'bgColorVerde': '#c5eb80',
         'bgColorVerde': '#c5eb80',
         'bgColorMorado': '#5e17eb',
         'bgColorNegro': '#000000',

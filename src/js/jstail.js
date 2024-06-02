@@ -2,6 +2,7 @@
 
 const div = document.querySelector('.textos');
 const repetivoText = document.querySelector('.textoRepetivo');
+
 const subtext = document.querySelector('.subtext');
 const botonIndg = document.getElementById('indagar');
 const sig = document.getElementById('indagar');
@@ -54,6 +55,7 @@ setTimeout(() => efectoTextSecundario(subtext,text,j+1), 100);
 
 };
 
+
 text = 'Desarrolador Front-end y back-end en Formacion.';
 efectoTextSecundario(subtext,text);
 
@@ -75,8 +77,8 @@ efectoTextRepetivo(repetivoText,rText);
 
 
 
-const webC = () => {
 
+const webC = () => {
   if ( palabr.textContent && hidden){
     web.classList.remove('hidden')
     return;}
@@ -90,15 +92,16 @@ function webEfect(elementosP,pl,k=0){
       
   };
   setTimeout(() => webEfect(palabr,pl,k+1), 150);
+  
+  const hidden = webClassN.classList.add('hidden')
+  web.classList.remove('hidden')
+  hidden;
+
 };
+
 pl = 'Usa los botones debajo del Avatar.';
-
-const hidden = webClassN.classList.add('hidden')
-web.classList.remove('hidden')
-hidden;
-
 webEfect(palabr,pl); 
-
+console.log('el')
 }
 webClassN.onclick = webC;
 
@@ -173,6 +176,13 @@ function scrollToElement(elementId) {
   if (elemento) {
     elemento.scrollIntoView({ behavior: 'smooth' });
   };
+}
+
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
 function scrollToSection(sectionId) {
@@ -270,7 +280,5 @@ colorFijo4.classList.remove('bg-bgColorNegro')
 
 }else{
   colorFijo5.classList.remove('bg-bgColorNegro');
-  colorFijo5.classList.add('bg-bgColorMorado');
-}
-
+  colorFijo5.classList.add('bg-bgColorMorado');}
 });
