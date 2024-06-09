@@ -28,7 +28,6 @@ module.exports = {
            colors : {
 
         'bgColorVerde': '#c5eb80',
-        'bgColorVerde': '#c5eb80',
         'bgColorMorado': '#5e17eb',
         'bgColorNegro': '#000000',
         'bgColorBlanco': '#ffffff',

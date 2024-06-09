@@ -3,6 +3,9 @@
 //QUERYS DE EFECTOS DE ESCTITURA//
 const div = document.querySelector('.textos');
 const repetivoText = document.querySelector('.textoRepetivo');
+const palabraBienvenido = document.getElementById('bienvenido')
+const textoPortatil = document.getElementById('textPortatil')
+const efectoPt = document.getElementById('efectoPortatil')
 
 const subtext = document.querySelector('.subtext');
 const palabr = document.getElementById('palabra');
@@ -16,12 +19,13 @@ const colorFijo4 = document.getElementById('cambio4');
 const colorFijo5 = document.getElementById('cambio5');
 
 
-const panel = document.getElementById('svgs');
 
 //Querys de el Avatar//
+const panel = document.getElementById('svgs');
 const web = document.getElementById('webClass');
 const webClassN = document.getElementById('webClassNormal')
 
+//Querys de cambio de diseño//
 
 const mn = document.getElementById('main');
 const headerColor= document.getElementById('headerGris');
@@ -29,20 +33,18 @@ const bgSection1 = document.getElementById('bgSection1');
 const swichOn = document.getElementById('swichW');
 const swichOff = document.getElementById('swichB');
 const headerColorM = document.getElementById('headerMorado')
-const palabraBienvenido = document.getElementById('bienvenido')
 const colorPalabraElias = document.getElementById('textElias')
-const textoPortatil = document.getElementById('textPortatil')
-const efectoPt = document.getElementById('efectoPortatil')
+const colorMiEspecialidad = document.getElementById('miEspecialidad')
 
 
 //EFECTOS ESCRITURA AUTOMATICA AL INICIAR LA PAGINA//
 
 function efectoText(elemento,texto,i=0){
-elemento.textContent += texto[i];
-
-if(i === texto.length-1){
+  elemento.textContent += texto[i];
+  
+  if(i === texto.length-1){
     return;
-}
+    }
 setTimeout(() => efectoText(div,texto,i+1), 130);
 
 }
@@ -149,6 +151,8 @@ const btnOn = () =>{
   headerColorM.classList.remove('bg-bgColorVerde')
   headerColorM.classList.add('bg-bgColorMorado')
 
+  
+
 }
 swichOn.onclick = btnOn
 
@@ -160,7 +164,7 @@ const btnOff = () =>{
   headerColorM.classList.add('bg-bgColorVerde')
   headerColorM.classList.remove('bg-bgColorGris')
 
-  bgSection1.classList.add('bg-bgColorMorado')
+  bgSection1.classList.add('bg-bgColorBlanco')
   bgSection1.classList.remove('bg-bgColorVerde')
 
   palabraBienvenido.classList.add('text-bgColorNegro')
